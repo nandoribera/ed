@@ -1,0 +1,20 @@
+20171010
+repaso de operaciones de git
+
+clonado de repositorio:
+git clone https://github.com/nandoribera/ed.git
+
+configuración inicial:
+git config --global user.name nandoribera
+git config --global user.email 1dam.fribera@institutoserpis.org
+git config --global push.default=simple
+git config --global push.default simple
+git config --list
+
+
+nueva versión:
+git add diario.txt (marca el fichero diario.txt)
+git commit -m "Resumen motivo versión"(incluye los marcados)
+
+publicación en remoto:
+git push
