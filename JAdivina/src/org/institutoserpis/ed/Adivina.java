@@ -8,21 +8,28 @@ public class Adivina {
 	public static void main(String[] args) {
 //		Generar número aleatorio		
 		Random random = new Random();
-		int valorDado = random.nextInt(1000)+1;  // Entre 0 y 1000.
+		int valorDado = random.nextInt(1000)+1;  // Entre 1 y 1000.
 //		System.out.print(valorDado);
 		
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Adivina el numero (Entre 1 y 1000): ");
+		int contadorDeIntentos = 1;
+		
+		System.out.printf("Adivina el numero (Entre 1 y 1000) [intento %d]: ", 
+				contadorDeIntentos);
 		String Numero = scanner.nextLine();
 		int num = Integer.parseInt(Numero);
 		while (valorDado != num) {
+			contadorDeIntentos++;
 			if (valorDado < num)
-				System.out.print("Es menor que ese. Vuelve a intentarlo: ");
+				System.out.printf("Es menor que ese. Vuelve a intentarlo [intento %d]: ", 
+						contadorDeIntentos);
 			else
-				System.out.print("Es mayor que ese. Vuelve a intentarlo: ");
+				System.out.printf("Es mayor que ese. Vuelve a intentarlo [intento %d]: ", 
+						contadorDeIntentos);
 			Numero = scanner.nextLine();
 			num = Integer.parseInt(Numero);
 		}
-		System.out.println("Correcto");
+		System.out.printf("Enhorabuena. Has acertado en %s %s.", 
+				contadorDeIntentos, contadorDeIntentos == 1 ? "intento" : "intentos");
 	}
 }
