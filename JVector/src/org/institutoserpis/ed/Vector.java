@@ -12,7 +12,7 @@ public class Vector {
 		int value = 33;
 		int index = 0;
 		Vector.indexOff(v, value);
-		while (value != v[index]) {
+		while (value != v[index]) && (value > v[5]) {
 			index ++;	
 		}
 		
