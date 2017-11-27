@@ -18,3 +18,9 @@ git commit -m "Resumen motivo versión"(incluye los marcados)
 
 publicación en remoto:
 git push
+
+
+20171121
+Instalación Monodevelop
+sudo apt update
+sudo apt install Monodevelop
