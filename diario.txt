@@ -24,3 +24,6 @@ git push
 Instalación Monodevelop
 sudo apt update
 sudo apt install Monodevelop
+
+20172711
+Resubidos ejercicios con errores
