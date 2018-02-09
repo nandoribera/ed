@@ -3,14 +3,17 @@ package org.institutoserpis.ed;
 import java.util.Scanner;
 
 public class Suma {
+
 	public static void main(String[] args) {
-		String num1 = "14";
-		int primero = Integer.parseInt(num1);
-		String num2 = "33";
-		int segundo = Integer.parseInt(num2);
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Introduce un número: ");
+		String primerNumero = scanner.nextLine();
+		int primero = Integer.parseInt(primerNumero);
+		System.out.print("introduce el segundo: ");
+		String segundoNumero = scanner.nextLine();
+		int segundo = Integer.parseInt(segundoNumero);
 		int suma = primero + segundo;
-		System.out.println("La suma es " + suma);
-		
+		System.out.println("La suma vale " + suma);
 	}
 
 }

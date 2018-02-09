@@ -6,30 +6,35 @@ import java.util.Scanner;
 public class Adivina {
 
 	public static void main(String[] args) {
-//		Generar número aleatorio		
 		Random random = new Random();
-		int valorDado = random.nextInt(1000)+1;  // Entre 1 y 1000.
-//		System.out.print(valorDado);
-		
+		int numeroAleatorio = random.nextInt(1000) + 1;
+		System.out.println("Numero aleatorio=" + numeroAleatorio);
 		Scanner scanner = new Scanner(System.in);
+		
 		int contadorDeIntentos = 1;
 		
-		System.out.printf("Adivina el numero (Entre 1 y 1000) [intento %d]: ", 
-				contadorDeIntentos);
-		String Numero = scanner.nextLine();
-		int num = Integer.parseInt(Numero);
-		while (valorDado != num) {
+		System.out.printf("Adivina el número (entre 1 y 1000) [intento %s] : ", 
+			contadorDeIntentos
+		);
+		
+		String numero = scanner.nextLine();
+		int numeroIntroducido = Integer.parseInt(numero);
+		while (numeroIntroducido != numeroAleatorio) {
 			contadorDeIntentos++;
-			if (valorDado < num)
-				System.out.printf("Es menor que ese. Vuelve a intentarlo [intento %d]: ", 
-						contadorDeIntentos);
+			if (numeroAleatorio < numeroIntroducido)
+				System.out.printf("Es menor que ese. Vuelve a intentarlo [intento %s] : ", 
+					contadorDeIntentos
+				);
 			else
-				System.out.printf("Es mayor que ese. Vuelve a intentarlo [intento %d]: ", 
-						contadorDeIntentos);
-			Numero = scanner.nextLine();
-			num = Integer.parseInt(Numero);
+				System.out.printf("Es mayor que ese. Vuelve a intentarlo [intento %s]: ",
+					contadorDeIntentos
+				);
+			numero = scanner.nextLine();
+			numeroIntroducido = Integer.parseInt(numero);
 		}
-		System.out.printf("Enhorabuena. Has acertado en %s %s.", 
-				contadorDeIntentos, contadorDeIntentos == 1 ? "intento" : "intentos");
+		System.out.printf("Enhorabuena. Has acertado en %s %s.\n", 
+			contadorDeIntentos, contadorDeIntentos == 1 ? "intento" : "intentos"
+		);
 	}
+
 }
