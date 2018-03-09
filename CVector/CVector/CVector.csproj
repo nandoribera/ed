@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{66FA0684-D7BE-4BD9-ADBF-DEF6402287F5}</ProjectGuid>
+    <ProjectGuid>{4E6AEEB6-7060-4E4A-A43B-A9A5F0531BC2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>CVector</RootNamespace>
     <AssemblyName>CVector</AssemblyName>
