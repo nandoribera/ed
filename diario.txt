@@ -8,7 +8,7 @@ configuración inicial:
 git config --global user.name nandoribera
 git config --global user.email 1dam.fribera@institutoserpis.org
 git config --global push.default=simple
-git config --global push.default simple
+git config --global push.default=simple
 git config --list
 
 
@@ -27,3 +27,28 @@ sudo apt install Monodevelop
 
 20172711
 Resubidos ejercicios con errores
+
+20180309
+Clase
+Explicación clase Vector test excepciones.
+Explicación algoritmos directos.
+
+Proyecto
+Subido CVector completado indexMin, Swap y Sortcon NUnit (tests unitarios)
+
+20180313
+Clase
+Uso de git
+Guías git https://git-scm.com/doc
+stash - Guardar trabajo temporalmente.
+Repositorios remotos se ubican en forks, espacio de trabajo de cada contribuyente al proyecto final.
+
+Comandos
+git --help
+git log --oneline --decorate
+
+Proyecto
+Primer proyecto Gradle con eclipse
+GHolaMundo
+
+
