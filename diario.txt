@@ -51,4 +51,19 @@ Proyecto
 Primer proyecto Gradle con eclipse
 GHolaMundo
 
+20182003
+Clase
+Crear otra vez GHolaMundo
+Explicación test gradle
+SQLite (base de datos reducida)
+MariaDB
+postgresql (De los mejores)
+
+
+Proyecto
+HolaMundo gradle
+conectar SQLite con proyecto GHolaMundo
+foma compacta: compile 'mysql:mysql-connector-java: '5.1.46'
+	Botón derecho proyecto Gradle > Gradle > refresh gradle project (para incluir SQLite)
+
 
