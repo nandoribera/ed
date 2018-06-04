@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lista de la compra</string>
+    <string name="remove" />
+    <string name="confirm" />
+    <string name="confirmar" />
+    <string name="borrar" />
+</resources>
